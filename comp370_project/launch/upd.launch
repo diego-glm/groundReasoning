@@ -1,5 +1,0 @@
-<launch>
-  <!--Subrcibes to laserscan and dispay graph of infomation live.-->
-    <node pkg="comp370_project" name="readLaserScan" type="upd_laserdata.py" />
-
-</launch>

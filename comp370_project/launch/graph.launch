@@ -1,8 +1,0 @@
-<launch>
-  
-  <!--Subrcibes to laserscan and dispay graph of infomation live.-->
-    <node pkg="comp370_project" name="dataGraph" type="bar_plotFinal.py" />
-
-  
-
-</launch>
