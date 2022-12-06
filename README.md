@@ -49,7 +49,7 @@ pre-setup
 
 ## Installation
 
-Follow the ROS setup on your Host computer and Turtlebot setup on the os of the robot (see requirement for links.)
+Follow the ROS setup on your Host computer and Turtlebot setup on the os of the robot (see Requirement.)
 
 Import Ground Reasoning files into your workspace (make sure you build these packages with catkin_make). 
 
