@@ -25,17 +25,17 @@
   
   <!--Opens rviz and slammap.-->
   <group if="$(arg level4)">
-    <node name="rviz" pkg="rviz" type="rvizSlam" args="-d $(find turtlebot_rviz_launchers)/rviz/navigation.rviz"/>
+    <node name="rvizSlam" pkg="rviz" type="rviz" args="-d $(find turtlebot_rviz_launchers)/rviz/navigation.rviz"/>
   </group>
 
   <!--Opens rviz and display camera with depth live.-->
   <group if="$(arg level5)">
-    <node name="rviz" pkg="rviz" type="rvizRaw" args="-d $(find turtlebot_rviz_launchers)/rviz/camera_raw.rviz"/>
+    <node name="rvizRaw" pkg="rviz" type="rviz" args="-d $(find turtlebot_rviz_launchers)/rviz/camera_raw.rviz"/>
   </group>
 
   <!--Opens rviz and display camera live.-->
   <group if="$(arg level6)">
-    <node name="rviz" pkg="rviz" type="rvizNormal" args="-d $(find turtlebot_rviz_launchers)/rviz/camera_normal.rviz"/>
+    <node name="rvizNormal" pkg="rviz" type="rviz" args="-d $(find turtlebot_rviz_launchers)/rviz/camera_normal.rviz"/>
   </group>
 
 </launch>
