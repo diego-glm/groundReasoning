@@ -20,7 +20,7 @@ and poor decision-making.
 
 - Link to the project page:
 
-  [Rhodes College Webpage](https://github.com/diego-glm/groundReasoning).
+  [Rhodes College Webpage](https://cs.rhodes.edu/~reasoningbot).
   
   [GitHub Repositary](https://github.com/diego-glm/groundReasoning).
   
