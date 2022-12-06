@@ -18,10 +18,9 @@ that come from data analysis in a diverse environment. These demonstrations will
 issue that comes from a robot's perception of its setting and how that can lead to problematic sensor data 
 and poor decision-making.
 
-- For a full description of the module, visit the
-  [project page](https://www.drupal.org/project/admin_menu).
-- Submit bug reports and feature suggestions, or track changes in the
-  [issue queue](https://www.drupal.org/project/issues/admin_menu).
+- For a full description of the module, visit the project page
+  [Rhodes College Webpage](https://github.com/diego-glm/groundReasoning).
+  [GitHub Repositary](https://github.com/diego-glm/groundReasoning).
   
 ## Requirements
 
