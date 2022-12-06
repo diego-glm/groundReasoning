@@ -30,7 +30,7 @@ This module requires the following setup:
 
 For Host machine:
 - [ROS setup](https://wiki.ros.org/ROS/Installation)
-- [Ground Reasoning Pakcages](https://github.com/diego-glm/groundReasoning/tree/main/packages)
+- [Ground Reasoning Packages](https://github.com/diego-glm/groundReasoning/tree/main/packages)
 
 For Turtlebot:
 - [Turtlebot setup](http://wiki.ros.org/turtlebot/Tutorials/indigo/Turtlebot%20Installation)
