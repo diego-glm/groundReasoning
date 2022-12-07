@@ -39,7 +39,7 @@ For Turtlebot:
 
 ## Sources
 
-These were the sources that were used within the Ground Reasoning files: (Not required)
+These were the sources that were used within the Ground Reasoning files: (Not required to have if you have the Ground Reasoning packages)
 
 [turtlebot](https://github.com/turtlebot/turtlebot.git): The turtlebot stack provides all the 
 basic drivers for running and using a TurtleBot with ROS.
