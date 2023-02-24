@@ -1,12 +1,7 @@
 #!/usr/bin/env python3
 
-"""Print out the laserscan topic as raw.
-
-Prints out the laserscan topic with not filters and in 
-a semi-formative style manner that revolves around averages.
-
-Attributes:
-    None
+"""
+Prints unfiltered Data
 """
 
 # Every python controller needs these lines

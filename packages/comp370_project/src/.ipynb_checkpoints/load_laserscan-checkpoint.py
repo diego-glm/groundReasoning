@@ -1,9 +1,17 @@
 #!/usr/bin/env python3
 
-"""
-Reads and Writes the LaserScan Data
+"""Reads and Writes the laserscan data
+
+    Puts the information from the laserdata topic to t
+    he laserdata text file.
+
+    Works inconjunction with dataBarPlot.py
+
+    Attributes:
+    None
 """
 
+# Every python controller needs these lines
 import roslib; roslib.load_manifest('comp370_project')
 import rospy
 import sys # For args from launch file
@@ -12,12 +20,13 @@ import numpy as np
 from sensor_msgs.msg import LaserScan # The laser scan message
 import time
 
-"""
-Take the larger array (640 index) and convert it into a smaller one (32 index) using every 20th term
+"""Create an smaller array from a bigger array
+
+Convert an array into a small array containing it EVERY 32TH TERM.
 
 Args:
-    arr (array): input array (640 index)
-    div (int):   divide the input array by this value (640/20 = 32, so div typically = 20) 
+    arr (array): the array that want to be reduce
+    div (int):   dictates how the n-TH will be decided
 Returns:
     The smaller representation of the arr given.
 
@@ -32,7 +41,7 @@ def read_data1(arr, div):                   # div = 20 ; len(arr)= 640
             avg_array.append(0.7)               # Interpret NAN as this number
     return avg_array
 
-"""Create a smaller array from a bigger array
+"""Create an smaller array from a bigger array
 
 Convert an array into a small array containing it averages 
 of each section.

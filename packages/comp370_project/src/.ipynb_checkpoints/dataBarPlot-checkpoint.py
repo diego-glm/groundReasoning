@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
 
-"""
-Prints the LaserScan Data as a bargraph using matplotlib and seaborn
+"""Displays the laserscan topic as a bar graph.
+
+An improvement from dataFilterTH.py. 
+Prints out the laserscan topic in a formative 
+style manner that revolves around averages.
+
+Attributes:
+    None
 """
 
 import load_laserscan

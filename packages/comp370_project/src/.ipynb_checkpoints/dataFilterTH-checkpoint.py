@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 
-"""
-Prints filtered LaserScan Data
-every nth element
-(I feel like this is kinda useless)
+"""Print out the laserscan topic to the terminal by 
+considering the n-TH placement.
+
+An improvement from dataRaw.py. 
+Prints out the laserscan topic in a formative 
+manner that revolves around n-TH placement.
+
+Attributes:
+    None
 """
 
 # Every python controller needs these lines

@@ -2,7 +2,13 @@
 
   <!--
   Determine which level is used
+  Run a Python script that prints the buttons and waits for one to be pressed, returning the one that was pressed
+  When you get a returned value, run the corrosponding function
+  Probably something like:
+  <node pkg="[filepath]" name="PrintButtons" type="PrintButtons.py" output="screen"/>
   -->
+  
+  
 
   <arg name="level1" default="false"/>
   <arg name="level2" default="false"/>
