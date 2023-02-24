@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Prints filtered LaserScan Data
-every nth element
-(I feel like this is kinda useless)
+Lower the resolution of the laserscan data (do we need this one either?)
 """
 
 # Every python controller needs these lines

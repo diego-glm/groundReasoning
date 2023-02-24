@@ -11,32 +11,29 @@ from matplotlib.animation import FuncAnimation
 import seaborn as sns
 import time
 
-"""Displays the bar plot
+"""
+Displays an updated bar plot via laserscan data
 
-Sets up and displays the bar plot. Update the bar plot 
-accoding to the laserscan_datatxt.
-
-Works inconjunction with load_laserscan.py
+Works with load_laserscan.py
 
 Args:
     txt (str): the string containing the address for the laserscan data file
-
 """
 def print_graph(txt):
-    plt.ion()
-    palette = list(reversed(sns.color_palette("seismic", 2).as_hex()))
+    plt.ion() #interactive mode on
+    palette = list(reversed(sns.color_palette("seismic", 2).as_hex())) #color palette selection
 
-    # Figure Dimentions
+    # Figure Details and Labels
     fig = plt.figure(figsize=(15,10)) #figsize=(8,9)
     plt.style.use("seaborn")
     plt.title("Ground Reasoning Project:", color=("blue"))
     plt.xlabel("LaserScan Data (Degrees)")
     plt.ylabel("Distance (m)")
 
-    # Creating the label
+    # Initialize arrays for printing
     ranges = []
     lst_default = []
-    for i in range(-30, 31, 3):
+    for i in range(-30, 31, 3): # I dont understand what this for loop is doing...
         if i != 0:
           ranges.append(str(i))
           lst_default.append(0.0)
@@ -45,9 +42,9 @@ def print_graph(txt):
         # Read from txt the data
         lst= lst_default
         load_laserscan.transf_laserdata()
-        pullData = open(txt,"r")
-        data = pullData.read().split(',')
-        if len(data) == 20:
+        pullData = open(txt) # open the given text file (laserscan_data.txt)
+        data = pullData.read().split(',') # separates data via commas
+        if len(data) == 20: # Dont know why this is set to 20
             lst = list(map(float, data))
         pullData.close()
 

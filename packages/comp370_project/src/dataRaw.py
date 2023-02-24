@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Prints unfiltered Data
+Print unfiltered Data
 """
 
 # Every python controller needs these lines
@@ -9,18 +9,13 @@ from shelve import Shelf
 import roslib; roslib.load_manifest('comp370_project')
 import rospy
 import sys # For args from launch file
-import os 
+import os
 import math
 import numpy as np
 from sensor_msgs.msg import LaserScan # The laser scan message
 
-""" Print laserscan data
-
-Print the laserScan data in a semi-formated way.
-
-Args:
-    scan (laserscan): single scan from a planar laser range-finder
-
+""" 
+Print laserscan data
 """
 def formated_print(scan):
     print("Minimun Angle:------------- ", '{0:.2f}'.format(scan.angle_min), "rad")
@@ -33,25 +28,22 @@ def formated_print(scan):
     print("Array:")
     print(scan.ranges)
 
-"""Interprets the laserscan data
-
-Set up the rate, clears the terminal, and prints the laserscan data
-
-Args:
-    scan (laserscan): single scan from a planar laser range-finder
-
 """
+Interprets the laserscan data
+Set up the rate, clear the terminal, and print the laserscan data
+"""
+
 def callback(scan):
     rate = rospy.Rate(1)
     os.system('clear')
     formated_print(scan)
     rate.sleep()
 
-"""Inicializes the ROS environment
-
-Creates a node within ROS and subsribes to the \scan topic
-
 """
+Initializes the ROS environment
+Creates a node within ROS and subsribes to the \scan topic
+"""
+
 def lazerdata_print():
     rospy.init_node('lazerdataRAW_V1_print', anonymous=True)
     rospy.loginfo('Data Visualization Initialized')

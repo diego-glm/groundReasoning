@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+'''
+This feels unnecessary for our demonstration. Not only is this printing fewer values, lowering the resolution of our 
+sensor, but it also averages the data points, which would just lead to false information. Wouldn't be opposed to removing
+this file entirely and replacing it with something else.
+'''
+
 """Print out the laserscan topic to the terminal as averages.
 
 An improvement from dataFilterTH.py. 

@@ -6,6 +6,13 @@
   When you get a returned value, run the corrosponding function
   Probably something like:
   <node pkg="[filepath]" name="PrintButtons" type="PrintButtons.py" output="screen"/>
+  
+  level_1 = all raw data
+  level_2 = every 32nd point (lower resolution) (do we need this one)
+  level_3 = bar graph (all data)
+  level_4 = 2D overhead scan
+  level_5 = camera with only depth values
+  level_6 = camera
   -->
   
   
@@ -18,7 +25,7 @@
   <arg name="level6" default="false"/>
   
   <!--
-  Subrcibes to laserscan, prints unfiltered data.
+  Subrcibes to laserscan, prints all raw data.
   -->
   
   <group if="$(arg level1)">
@@ -26,7 +33,7 @@
   </group>
 
   <!--
-  Subrcibes to laserscan, prints filtered data.
+  Subrcibes to laserscan, prints limited data.
   -->
   
   <group if="$(arg level2)">
@@ -35,7 +42,7 @@
   </group>
 
   <!--
-  Subrcibes to laserscan and dispay graph of infomation live.
+  Subrcibes to laserscan, print updating bar graph.
   -->
   
   <group if="$(arg level3)">
@@ -52,7 +59,7 @@
   </group>
 
   <!--
-  Opens rviz and display camera with depth live.
+  Opens rviz and display depth values from camera.
   -->
   
   <group if="$(arg level5)">
@@ -60,7 +67,7 @@
   </group>
 
   <!--
-  Opens rviz and display camera live.
+  Opens rviz and display camera feed.
   -->
   
   <group if="$(arg level6)">
