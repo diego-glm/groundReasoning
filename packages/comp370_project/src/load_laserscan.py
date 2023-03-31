@@ -22,14 +22,14 @@ Returns:
     The smaller representation of the arr given.
 
 """
-def read_data1(arr, div):                   # div = 20 ; len(arr)= 640
-    parts = int(len(arr)/div)               # len(arr)/div = parts = 32
+def read_data1(arr, div):                       # div = 20 ; len(arr)= 640
+    parts = int(len(arr)/div)                   # len(arr)/div = parts = 32
     avg_array = []
     for i in range(parts-1, len(arr), parts):   #From 0, 31, 63, ..., 511, 544, 575 = i
         if not math.isnan (arr[i]):             # Check if current value is not a nan
             avg_array.append(round(arr[i], 4))
         else:                                   # If the values were nan, then append max distance
-            avg_array.append(0.7)               # Interpret NAN as this number
+            avg_array.append(0)                 # 0's in the data are actually just nan values - The turtlebot cant read values this clsoe anyway
     return avg_array
 
 """Create a smaller array from a bigger array
